@@ -4,7 +4,7 @@ Your task will be to build an open world urban environment and write a C# Unity 
 ### Deliverables for the World Map 
 - The environment should be approximately 1 km by 1 km (Hint 1 Unity unit is 1 meter)
 - Terrain should vary in color, size, and gradient of terrain (hilly and flat)
-- Include terrain 
+- Include buildings  
 
 ### Deliverables for GPS Script 
 - The GPS C# code should be able to do the following 
@@ -12,9 +12,10 @@ Your task will be to build an open world urban environment and write a C# Unity 
 	- Have this script display on run time the location of the game object in **Unity coordinates and GPS coordinates**
 	- Have the user be able to define the base origin for the latitude, longitude, and altitude (we're not always going to be at 0,0,0)
 
-You are free to use whatever resource available to you. In addition, please make your commits and pushes to this GitHub repo for progress tracking.  If you ever feel stuck (5-minute rule/grinding your wheels) to ask for help, as well as if instructions are unclear. 
+You are free to use whatever resource available to you. If you ever feel stuck (5-minute rule/grinding your wheels) don't be scared to ask for help, as well as if instructions are unclear. For status checks please push your project to github named **unity_environment_task** and send the link to Justin   
 
 ## Initial Setup/Getting Started
+- Run the install_unityhub.sh to download UnityHub and vscode 
 - Before starting a new project, add the following  free assets:
 	- Environments
 		- https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808

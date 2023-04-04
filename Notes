@@ -1,0 +1,40 @@
+using UnityEngine;
+using System;
+
+public class GPSConverter : MonoBehaviour
+{
+    // Coordinates of the base origin
+    public double baseLatitude = 0.0;
+    public double baseLongitude = 0.0;
+    public double baseAltitude = 0.0;
+
+    // Display of the current position in Unity and GPS coordinates
+    public GUIText positionDisplay;
+
+    // Conversion factor from Unity units to meters (adjust as needed)
+    private const double UnityToMeters = 1.0;
+
+    void Update()
+    {
+        // Get the current position in Unity coordinates
+        Vector3 unityPosition = transform.position;
+
+        // Convert Unity coordinates to GPS coordinates
+        double latitude = baseLatitude + unityPosition.z / UnityToMeters;
+        double longitude = baseLongitude + unityPosition.x / UnityToMeters;
+        double altitude = baseAltitude + unityPosition.y / UnityToMeters;
+
+        // Update the position display
+        positionDisplay.text = String.Format("Unity Position: ({0}, {1}, {2})\nGPS Position: ({3}, {4}, {5})",
+            unityPosition.x, unityPosition.y, unityPosition.z,
+            latitude, longitude, altitude);
+    }
+}
+
+To use this code, you can attach the GPSConverter script to the 
+cube object in the scene, and assign a GUIText component to the 
+positionDisplay variable in the inspector. You can also adjust 
+the values of baseLatitude, baseLongitude, and baseAltitude to 
+match your desired origin. When the game is running, the position 
+display will show the current position of the cube in both Unity 
+coordinates and GPS coordinates, using the base origin as a reference.

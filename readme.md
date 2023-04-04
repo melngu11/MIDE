@@ -8,9 +8,9 @@ Your task will be to build an open world urban environment and write a C# Unity 
 
 ### Deliverables for GPS Script 
 - The GPS C# code should be able to do the following 
-	-  Be attached to a game object take in the Unity position of the game object and convert it to the latitude and longitude
-	- Have this script display on run time the location of the game object in **Unity coordinates and GPS coordinates**
-	- Have the user be able to define the base origin for the latitude, longitude, and altitude (we're not always going to be at 0,0,0)
+	-  Be attached to a game object take in the Unity position and convert to respective latitutde, longitude, and altitude.
+	- Have this display the location of the game object in **Unity coordinates and GPS coordinates**
+	- Have the user be able to define the base origin for the latitude, longitude, and altitude (we're not always going to be based at 0,0,0 for lat,long,alt)
 
 You are free to use whatever resource available to you. If you ever feel stuck (5-minute rule/grinding your wheels) don't be scared to ask for help, as well as if instructions are unclear. For status checks please push your project to github named **unity_environment_task** and send the link to Justin   
 

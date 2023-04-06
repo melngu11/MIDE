@@ -24,3 +24,6 @@ public class FollowTarget : MonoBehaviour
         transform.LookAt(target.position);
     }
 }
+
+
+Adjust camera angle via distance and height (5,2)

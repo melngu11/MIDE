@@ -41,3 +41,6 @@ public class GPS : MonoBehaviour
 
 Assign GPS script to object and UI text to coordinate text
 User may adjust base coordinates from inspector
+#TODO:
+Rect Transform:(-400, 330, 0)
+Bold, font size 16, overflow

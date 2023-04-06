@@ -37,3 +37,7 @@ public class GPS : MonoBehaviour
         coordinatesText.text = coordinatesString;
     }
 }
+
+
+Assign GPS script to object and UI text to coordinate text
+User may adjust base coordinates from inspector
